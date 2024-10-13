@@ -35,7 +35,6 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['QuestionableDeer.pythonanywhere.com', '127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -158,3 +157,7 @@ STORAGES = {
 }
 
 CSRF_TRUSTED_ORIGINS = ['https://QuestionableDeer.pythonanywhere.com']
+
+SECURE_SSL_REDIRECT=True
+SESSION_COOKIE_SECURE=True
+CSRF_COOKIE_SECURE=True
